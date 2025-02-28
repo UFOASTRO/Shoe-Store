@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@layer utilities {
+    .scrollbar-hidden {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
+    }
+  }
+
+
+  @layer components {
+    /* Custom component classes */
+    .gradient-text {
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .regular-button{
+
+    }
+  }
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.hovered:hover{
+    background-color: #000000;
+    color :#fdc64f;
+}
+.hovered{
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.zoom{
+    transition: transform 0.2s ease-in-out;
+}
+.zoom:hover{
+    transform: scale(1.03);
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoestore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                        roboto: ["Roboto", "sans-serif"],
+                        regular: ["Wix Madefor Text", "sans-serif"]
+                    }
+                    
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class=" bg-white font-regular overflow-x-hidden">
+    <!-- Header -->
+    <header class="text-center">
+        <div class="marquee-container p-2 bg-black text-[#fdc64f] overflow-hidden">
+            <div class="marquee font-regular font-bold text-[12px]">
+                <p>FREE SHIPPING ON ALL ORDERS OVER $50</p>
+                <p>FREE SHIPPING ON ALL ORDERS OVER $50</p>
+                <p>FREE SHIPPING ON ALL ORDERS OVER $50</p>
+                <p>FREE SHIPPING ON ALL ORDERS OVER $50</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center shadow-md p-4">
+        <span class="text-2xl font-bold">RYST</span>
+
+
+        <div class="right flex items-center gap-4">
+            <!-- Search Bar  -->
+            <div class="flex items-center border border-black rounded-full px-4 py-2 w-80 ">
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                <input type="text" placeholder="Search" class="outline-none w-full bg-transparent text-center text-sm">
+            </div>
+
+            <!-- Heart Icon  -->
+            <i class="fa-regular fa-heart text-sm"></i>
+
+            <!-- Cart Icon  -->
+            <div class="cart relative gap-0 ">
+                <p class="absolute right-0 -inset-y-1  text-[15px] font-semibold text-[#fdc64f] ">1</p>
+                <i class="fa-solid fa-shopping-cart text-sm fill-none"></i>
+            </div>
+            <!-- Login Button -->
+            <div class="login">
+                <button id="login" class="border rounded-full px-4 py-2 w-40 border-black font-semibold text-sm hovered">LOG IN</button>
+            </div>
+
+            <!-- Menu -->
+            <div class="Menu">
+                <button id="Menu"
+                    class="border rounded-full px-4 py-2 w-32 border-black font-semibold text-sm hovered">MENU</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative font-regular bg-cover bg-fixed  bg-center bg-no-repeat"
+        style="background-image: url('../img/Shoe-hero-section.avif'); height: 800px;">
+        <div class="hero-text absolute top-0 left-0 py-10 px-6">
+            <p class="text-[5.5rem] font-bold" data-aos="fade-up" data-aos-easing="ease">Step-up
+                Your Stride</p>
+            <p class=" mt-8 mb-4 text-[1.3rem]">Premium Athletic Footwear</p>
+            <button
+                class=" border rounded-full  px-4 py-2 w-30 border-black bg-black font-semibold text-sm text-[#fdc64f] ">
+                SHOP NOW
+            </button>
+        </div>
+
+        <!-- Display Box -->
+        <div
+            class=" backdrop-filter bg-opacity-95 absolute backdrop-blur-sm bg-[#f2f0e5] rounded-md shadow-lg p-3 bottom-4 right-8 flex space-x-4 max-w-lg overflow-hidden" data-aos="fade-up-left" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="500" >
+            <div class="relative">
+                <img alt="" class=" rounded-sm" height="400" src="../img/DisplayShoe 1.avif" width="400" />
+                <span class="absolute top-2 left-2 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded">
+                    SALE
+                </span>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-sm font-light font-regular pt-3">
+                        MARATHON <br> MASTER
+                    </h2>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm font-light">
+                            $140.00
+                        </span>
+                        <span class="text-gray-500 line-through text-sm">
+                            $160.00
+                        </span>
+                    </div>
+                </div>
+                <button
+                    class="mt-3 text-black border border-black rounded-full px-2 py-2 text-[0.8rem] font-bold  hovered  ">
+                    ADD TO CART
+                </button>
+            </div>
+    </section>
+
+
+    <!-- Best Sellers  -->
+    <section class="best-sellers my-20 mx-10 ">
+        <p class="text-xl pb-10">BEST SELLERS</p>
+        <button >VIEW ALL</button>
+        <div class="flex justify-between items-center gap-4">
+
+            <!-- Product 1 -->
+            <div class="product2 flex flex-col gap-4 text-sm "  data-aos="fade-right" data-aos-easing="ease" data-aos-duration="300" data-aos-delay="500">
+                <div class="2 w-72 h-96 bg-red-700 rounded-md flex flex-col justify-center items-center relative">
+                    <span class=" absolute top-2 left-2 bg-white text-black text-xs  px-3 py-1 rounded">
+                        BEST SELLER
+                    </span>
+                    <img src="../img/DisplayShoe2.avif" alt="" class="max-w-full max-h-full">
+                </div>
+                <div class="label flex flex-col">
+                    <span class="font-semibold">SUSTAINABLE STRIDER</span>
+                    <span class="price">$150.00</span>
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product2 flex flex-col gap-4 text-sm " data-aos="fade-right" data-aos-easing="ease" data-aos-duration="350" data-aos-delay="650">
+                <div class="2 w-72 h-96 bg-red-700 rounded-md flex flex-col justify-center items-center relative">
+                    <span class=" absolute top-2 left-2 bg-white text-black text-xs  px-3 py-1 rounded">
+                        SALE
+                    </span>
+                    <img src="../img/DisplayShoe2.avif" alt="" class="max-w-full max-h-full">
+                </div>
+                <div class="label flex flex-col">
+                    <span class="font-semibold">DISTANCE ELITE</span>
+                    <span class="price">$140.00</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product2 flex flex-col gap-4 text-sm " data-aos="fade-right" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="800">
+                <div class="2 w-72 h-96 bg-red-700 rounded-md flex flex-col justify-center items-center relative">
+                    <span class=" absolute top-2 left-2 bg-white text-black text-xs  px-3 py-1 rounded">
+                        BEST SELLER
+                    </span>
+                    <img src="../img/DisplayShoe2.avif" alt="" class="max-w-full max-h-full">
+                </div>
+                <div class="label flex flex-col">
+                    <span class="font-semibold">SPRINT CHAMP</span>
+                    <span class="price">$180.00</span>
+                </div>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product2 flex flex-col gap-4 text-sm " data-aos="fade-right" data-aos-easing="ease" data-aos-duration="450" data-aos-delay="950">
+                <div class="2 w-72 h-96 bg-red-700 rounded-md flex flex-col justify-center items-center relative">
+                    <span class=" absolute top-2 left-2 bg-white text-black text-xs  px-3 py-1 rounded">
+                        SALE
+                    </span>
+                    <img src="../img/DisplayShoe2.avif" alt="" class="max-w-full max-h-full">
+                </div>
+                <div class="label flex flex-col">
+                    <span class="font-semibold">JUNIOR SPORT</span>
+                    <span class="price">$72.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 20% Off  Display -->
+    <section class="twenty-off relative font-regular bg-cover bg-fixed  bg-center bg-no-repeat"
+        style="background-image: url('../img/Discount\ section\ Banner.avif'); height: 100vh;">
+        <div class="twenty-off-text py-10 px-6">
+            <p class="text-[96px] font-bold">20% Off <br> Kids Stlyes</p>
+            <p class=" mt-8 mb-4 text-[1.3rem]">Exclusive, one-time offer</p>
+            <button
+                class=" border rounded-full  px-4 py-2 w-30 border-black bg-black font-semibold text-sm text-[#fdc64f] ">
+                SHOP NOW
+            </button>
+        </div>
+
+        <!-- Display Box -->
+        <div
+            class=" backdrop-filter bg-opacity-95 absolute backdrop-blur-sm bg-[#f2f0e5] rounded-md shadow-lg p-3 bottom-4 right-8 flex space-x-4 max-w-lg">
+            <div class="relative">
+                <img alt="" class=" overflow-hidden rounded-sm" height="400" src="../img/DisplayShoe-discount.avif"
+                    width="350" />
+                <span class="absolute top-2 left-2 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded">
+                    SALE
+                </span>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-sm font-light font-regular pt-3">
+                        CLASIC <br> COMFORT
+                    </h2>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm font-light">
+                            $72.00
+                        </span>
+                        <span class="text-gray-500 line-through text-sm">
+                            $90.00
+                        </span>
+                    </div>
+                </div>
+                <button
+                    class="mt-3 text-black border border-black rounded-full px-2 py-2 text-[0.8rem] font-bold  hovered ">
+                    ADD TO CART
+                </button>
+            </div>
+    </section>
+    <div class="marquee-container2 p-4 bg-black text-white overflow-hidden">
+        <div class="marquee font-regular  text-2xl uppercase">
+            <p>New Energy, Same High Quality <i class="fa-solid fa-asterisk text-blue-500 text-3xl"></i></p>
+            <p>New Energy, Same High Quality <i class="fa-solid fa-asterisk text-blue-500 text-3xl"></i></p>
+            <p>New Energy, Same High Quality <i class="fa-solid fa-asterisk text-blue-500 text-3xl"></i></p>
+            <p>New Energy, Same High Quality <i class="fa-solid fa-asterisk text-blue-500 text-3xl"></i></p>
+        </div>
+    </div>
+
+
+    <!-- Shop By collection -->
+    <section class="collection my-20 mx-5 pb-8 ">
+        <p class="text-xl pb-5">SHOP BY COLLECTION
+        </p>
+        <div class="flex justify-between items-center">
+
+            <!-- Product 1 -->
+            <div class="product1 flex flex-col  text-sm zoom">
+                <div class="2 w-auto h-[30rem] flex flex-col justify-center items-center relative "
+                      data-aos="zoom-in" >
+                    <span
+                        class=" absolute bottom-6 left-6 bg-none text-black text-xs py-2 px-2 border-black font-bold border rounded-full hovered">
+                        PERFORMANCE SERIES
+                    </span>
+                    <img src="../img/Collection 1.avif" alt="" class="max-w-full max-h-full">
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product2 flex flex-col text-sm zoom">
+                <div class="2 w-auto h-[30rem] flex flex-col justify-center items-center relative "
+                      data-aos="zoom-in" >
+                    <span
+                        class=" absolute bottom-6 left-6 bg-none text-black text-xs py-2 px-2 border-black font-bold border rounded-full hovered">
+                        LIMITED EDITION
+                    </span>
+                    <img src="../img/Collection 2.avif" alt="" class="max-w-full max-h-full">
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product3 flex flex-col text-sm zoom">
+                <div class="2 w-auto h-[30rem] flex flex-col justify-center items-center relative "
+                      data-aos="zoom-in" >
+                    <span
+                        class=" absolute bottom-6 left-6 bg-none text-black text-xs py-2 px-2 border-black font-bold border rounded-full hovered">
+                        KIDS COLLECTION
+                    </span>
+                    <img src="../img/collection 3.avif" alt="" class="max-w-full max-h-full">
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Final Statement section -->
+    <section class="hero-section relative font-regular bg-cover bg-fixed  bg-center bg-no-repeat max-h-full pb-8"
+        style="background-image: url('../img/Final-image-home.avif'); height:100vh;">
+        <div class="hero-text absolute top-0 left-0 py-10 px-6" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="300">
+            <p class="text-[5.5rem] font-bold">Commited <br>
+                to Sustainability</p>
+        </div>
+        <!-- Card -->
+        <div
+            class=" backdrop-filter bg-opacity-45  bg-black absolute backdrop-blur-md  shadow-lg px-6 py-7 bottom-4 right-8 flex max-w-lg flex-col gap-6"  data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+            <div class="text gap-5 text-white  flex flex-col" >
+                <p class="text-xs font-bold">WALK WITH US TOWARDS A GREENER <br> PLANET, ONE STEP AT A TIME</p>
+                <p class="text-sm/6 ">I'm a paragraph. Click here to add your own text and <br> edit me. It’s easy. Just
+                    click
+                    “Edit Text” or double click <br> me to add your own content and make changes to the <br> font. I’m a
+                    great
+                    place for you to tell a story and let your <br> users know a little more about you.</p>
+            </div>
+            <div
+                class=" bg-none w-fit text-white text-xs px-4 py-2 border-white font-bold border rounded-full hovered">
+                READ MORE</div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+
+    <section class="Customer Reviews my-20 mx-10 pb-8">
+        <p class="uppercase">Customer Reviews</p>
+        <br>
+        <div class="reviews flex justify-end gap-4 ">
+            <div class="   bg-black  shadow-lg px-6 py-7 bottom-4 right-8 flex max-w-lg flex-col gap-6 rounded-md">
+                <div class="text gap-5 text-white  flex flex-col">
+                    <p class="text-xs font-bold">WALK WITH US TOWARDS A GREENER <br> PLANET, ONE STEP AT A TIME</p>
+                    <p class="text-sm/6 ">"I'm a paragraph. Click here to add your own text and <br> edit me. It’s easy.
+                        Just click
+                        “Edit Text” or double click <br> me to add your own content and make changes to the <br> font.
+                        I’m a great
+                        place for you to tell a story and let your <br> users know a little more about you."</p>
+                </div>
+                <div
+                    class=" bg-none w-fit text-white text-xs px-4 py-2 border-white font-bold border rounded-full hovered">
+                    READ MORE</div>
+
+            </div>
+
+            <div
+                class=" bg-none border border-black shadow-lg px-6 py-7 bottom-4 right-8 flex max-w-lg flex-col gap-6  rounded-md">
+                <div class="text gap-5 text-black  flex flex-col">
+                    <p class="text-xs font-bold">WALK WITH US TOWARDS A GREENER <br> PLANET, ONE STEP AT A TIME</p>
+                    <p class="text-sm/6 ">"I'm a paragraph. Click here to add your own text and <br> edit me. It’s
+                        easy. Just click
+                        “Edit Text” or double click <br> me to add your own content and make changes to the <br>
+                        font. I’m a great
+                        place for you to tell a story and let your <br> users know a little more about you."</p>
+                </div>
+                <div
+                    class=" bg-none w-fit text-black text-xs px-4 py-2 border-black font-bold border rounded-full hovered">
+                    READ MORE</div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8  px-4 flex justify-between font-regular">
+        <p class="text-2xl font-semibold">RYST</p>
+        <div class="forms flex flex-col items-end py-8 px-4 ">
+            <div class="flex flex-col items-end py-5 ">
+                <div class="bg-[#FEC74F] p-8  rounded-md w-full max-w-full">
+                    <h2 class="text-xl text-black mb-4">Stay updated, sign up to receive exclusive updates and
+                        offers</h2>
+                    <form class="text-black">
+                        <label class="block text-sm font-medium mb-2 " for="email">EMAIL</label>
+
+                        <input class="w-full p-2 pr-[41rem] mb-2 border border-black rounded bg-[#FEC74F] focus:bg-white text-sm focus:border-red-600" type="email"
+                            id="email" placeholder="Enter an email address like example@mysite.com.">
+
+                        <p class="text-xs text-black mb-4 hidden"><i class="fas fa-info-circle"></i> Enter an email
+                            address
+                            like example@mysite.com.</p>
+                        <div class="flex items-center mb-4">
+                            <input class="mr-2 bg-[#FEC74F]" type="checkbox" id="subscribe">
+                            <label class="text-sm" for="subscribe">Yes, subscribe me to your newsletter. *</label>
+                        </div>
+                        <button class="bg-[#FEC74F] border border-black text-black font-semibold py-2 px-4 rounded"
+                            type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="bg-black text-white py-8 flex justify-end">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <h3 class="bg-white text-black font-semibold p-1 mb-2 rounded-sm  text-sm">CONTACT</h3>
+                        <ul class="space-y-2">
+                            <li class=" text-white p-1 px-8 rounded-md  text-sm border border-white">info@mysite.com
+                            </li>
+                            <li class=" text-white p-1 px-8 rounded-md  text-sm border border-white">123-456-7890</li>
+                            <li class=" text-white p-1 px-8 rounded-md  text-sm border border-white">500 Terry Francine
+                                St. SA, CA 9415</li>
+                        </ul>
+                        <h3 class="bg-white text-black font-semibold p-1 mb-2 rounded-sm  text-sm mt-4">SOCIAL MEDIA
+                        </h3>
+                        <ul class="flex space-x-2">
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">IG</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">FB</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">TKTK</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="bg-white text-black font-semibold p-1 mb-2 rounded-sm  text-sm">LEGAL</h3>
+                        <ul class="space-y-2">
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Terms & Conditions
+                            </li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Privacy Policy</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Shipping Policy</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Refund Policy</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Accessibility
+                                Statement</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="bg-white text-black font-semibold p-1 mb-2 rounded-sm  text-sm">SHOP</h3>
+                        <ul class="space-y-2">
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">All Products</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Best Sellers</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Performance Series
+                            </li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Limited Edition</li>
+                            <li class="text-white p-1 px-8 rounded-md  text-sm border border-white">Kids Collection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-xs"> © 2025 by ASTRO 🚀</pclas>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .marquee {
+            display: flex;
+            gap: 20px;
+            animation: scroll 35s linear infinite;
+            white-space: nowrap;
+        }
+
+        .marquee:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
