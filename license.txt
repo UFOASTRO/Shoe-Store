@@ -1,0 +1,11 @@
+Model Information:
+* title:	Black Sneakers
+* source:	https://sketchfab.com/3d-models/black-sneakers-6cf710287b5340889834dab4b45d4860
+* author:	offlinebabe (https://sketchfab.com/offlinebabe)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Black Sneakers" (https://sketchfab.com/3d-models/black-sneakers-6cf710287b5340889834dab4b45d4860) by offlinebabe (https://sketchfab.com/offlinebabe) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
